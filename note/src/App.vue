@@ -1,29 +1,43 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="app">
+        <toolbar></toolbar>
+        <!--<note-list></note-list>
+        <editor></editor>-->
     </div>
-    <router-view/>
-  </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+    import Toolbar from '@/components/Toolbar'
+    //import NoteList from '@/components/NoteList'
+    //import Editor from '@/components/Editor'
+
+    export default {
+        components: {
+            Toolbar,
+            //NoteList,
+            //Editor
+        }
     }
-  }
-}
+</script>
+
+<style lang="less">
+    @font-serif: SimSun, "宋体", serif;
+    @font-sans-serif: PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, Arial, sans-serif;
+
+    #app {
+        font-family: @font-sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        border: none;
+        height: 100%;
+        max-height: 100%;
+        position: relative;
+    }
 </style>
