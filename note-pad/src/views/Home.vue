@@ -20,6 +20,7 @@
             </ul>
         </main>
         <button class="insert">＋</button>
+        <Editor></Editor>
     </div>
 </template>
 
@@ -27,12 +28,14 @@
     // @ is an alias to /src
     import HelloWorld from '@/components/HelloWorld.vue'
     import Header from '@/components/Header.vue'
+    import Editor from '@/components/Editor.vue'
 
     export default {
         name: 'home',
         components: {
             HelloWorld,
-            Header
+            Header,
+            Editor
         }
     }
 </script>
