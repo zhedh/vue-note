@@ -1,5 +1,6 @@
 <template>
     <div id="note-editor">
+
         <textarea class="form-control"
                   v-bind:value="activeNoteText"
                   v-on:input="editNote"></textarea>
