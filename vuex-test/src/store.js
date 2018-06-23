@@ -4,6 +4,7 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 const state = {
+    user: 'Kevin',
     count: 4,
     todos: [
         {

@@ -1,18 +1,22 @@
 <template>
     <div class="editor">
-
+        <header>
+            新建便签
+            <button class="left-btn">{{ leftBtnMsg }}</button>
+            <button class="right-btn">{{ rightBtnMsg }}</button>
+        </header>
     </div>
 </template>
 
 <script>
 
-    export default {
-        name: 'Editor'
-    }
+  export default {
+    name: 'Editor'
+  }
 </script>
 
 <style>
-    .editor{
+    .editor {
         position: fixed;
         top: 0;
         right: 0;
